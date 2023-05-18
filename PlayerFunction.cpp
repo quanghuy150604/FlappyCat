@@ -15,6 +15,7 @@ Player::Player()
 	map_y_ = 0;
 }
 
+
 Player::~Player()
 {
 
