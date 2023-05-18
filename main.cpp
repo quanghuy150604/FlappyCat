@@ -7,6 +7,7 @@
 #include "TextFunction.h"
 #include "MenuFunction.h"
 
+
 ImgFunction gBackground;
 TTF_Font* font_time = NULL;
 
