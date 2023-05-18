@@ -195,7 +195,7 @@ play_again:
 		if (dead == 1)
 		{
 			Mix_PlayChannel(-1, g_sound_hit, 0);
-			Sleep(1000);
+			Sleep(500);
 			int ending = menuu.ShowMenu(gRenderer, font_time, "img//res.png", 350, 350, "Play Again", "Exit", ans, high_score);
 			
 			if (ending == 1) {
