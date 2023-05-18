@@ -177,6 +177,7 @@ play_again:
 
 			game_map.DrawMap(gRenderer);			
 
+
 			high_score = max(ans / 8, high_score);
 			std::string score = "Score: ";
 			std::string str_val = std::to_string(ans / 8);
