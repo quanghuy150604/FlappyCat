@@ -17,6 +17,7 @@ Player::Player()
 
 Player::~Player()
 {
+
 }
 
 bool Player::LoadImg(std::string path, SDL_Renderer* screen)
