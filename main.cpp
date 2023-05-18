@@ -11,6 +11,7 @@ ImgFunction gBackground;
 TTF_Font* font_time = NULL;
 
 bool init()
+
 {
 	bool success = true;
 
