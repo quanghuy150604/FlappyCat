@@ -105,17 +105,22 @@ int main(int argc, char* args[])
 	int dead = 0;
 	int high_score = 0;
 	bool is_quit = false;
+
 	if (init() == false)
 		return -1;
-	if (LoadBackground() == false) {
+
+	if (LoadBackground() == false) 
+	{
 		std::cout << "false to load media";
 		return -1;
 	}
-	Mix_PlayMusic(g_sound_meomeo, -1);
-	Menu menuu;
-	int ret_menu = menuu.ShowMenu(gRenderer, font_time, "map//menu1.png", 310, 440, "Play Game", "Exit", 0, 0);
 
-	if (ret_menu == 1)
+	Mix_PlayMusic(g_sound_meomeo, -1);
+
+	Menu menuu;
+	int choose = menuu.ShowMenu(gRenderer, font_time, "map//menu1.png", 310, 440, "Play Game", "Exit", 0, 0);
+
+	if (choose == 1)
 	{
 		is_quit = true;
 	}
@@ -125,6 +130,7 @@ int main(int argc, char* args[])
 	}
 
 play_again:
+
 	int ans = 0;
 	Timer fps_timer;
 	
@@ -132,7 +138,6 @@ play_again:
 	game_map.LoadMap("map//map01.dat");
 	game_map.LoadTile(gRenderer);
 
-	
 	Player player_;
 	player_.LoadImg("img//meo4.png", gRenderer);
 	player_.set_clips();
@@ -140,10 +145,9 @@ play_again:
 	Text result_game;
 	result_game.setColor(Text::WHITE_TEXT);
 
-	ImgFunction res;
-	res.LoadImg("img//res.png", gRenderer);
+	ImgFunction game_over;
+	game_over.LoadImg("img//res.png", gRenderer);
 	
-
 	while (!is_quit)
 	{
 		fps_timer.start();
@@ -156,6 +160,7 @@ play_again:
 				}
 				player_.HandleInputAction(gEvent, gRenderer, g_sound_put);
 			}
+
 			SDL_SetRenderDrawColor(gRenderer, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR, RENDER_DRAW_COLOR);
 
 			SDL_RenderClear(gRenderer);
@@ -169,10 +174,10 @@ play_again:
 			player_.SetMapXY(map_data.start_x_, map_data.start_y_);
 
 			player_.PlayerMove(map_data);
+			
+			player_.CenterEntityOnMap(map_data);
 
 			player_.CheckMap(map_data, dead, ans, g_sound_point);
-
-			player_.CenterEntityOnMap(map_data);
 			
 			game_map.SetMap(map_data);
 
