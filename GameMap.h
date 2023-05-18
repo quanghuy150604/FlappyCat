@@ -19,11 +19,11 @@ public:
 	GameMap() {;}
 	~GameMap() {;}
 
-	void LoadMap(const char* name); // doc file text map
+	void LoadMap(const char* name); 
 	
-	void LoadTile(SDL_Renderer* screen); //load hinh anh tile map
+	void LoadTile(SDL_Renderer* screen);
 	
-	void DrawMap(SDL_Renderer* screen); //in anh vao vi tri o 
+	void DrawMap(SDL_Renderer* screen);  
 	
 	Map getMap() const { return game_map; };
 	
