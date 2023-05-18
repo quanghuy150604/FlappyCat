@@ -22,10 +22,7 @@ public:
 
 private:
 	
-	//time at started
 	int start_tick_;
-	
-	//The ticks stored when the timer was paused
 	int paused_ticks;
 	bool is_paused_;
 	bool is_started_;

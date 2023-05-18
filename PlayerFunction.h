@@ -33,10 +33,10 @@ public:
  
 private:
 
-	float x_plus;// gia tri tang them
+	float x_plus;
 	float y_plus;
 
-	float x_pos;// vi tri hien tai cua player
+	float x_pos;
 	float y_pos;
 
 	int width_frame;
