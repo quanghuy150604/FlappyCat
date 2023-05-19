@@ -1,5 +1,5 @@
 #pragma once
-#include "CommonFunction.h"
+#include "General.h"
 #include "ImgFunction.h"
 
 class Menu : public ImgFunction

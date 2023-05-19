@@ -134,7 +134,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ImgFunction.cpp" />
-    <ClCompile Include="CommonFunction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameMap.cpp" />
     <ClCompile Include="MenuFunction.cpp" />
@@ -144,7 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImgFunction.h" />
-    <ClInclude Include="CommonFunction.h" />
+    <ClInclude Include="General.h" />
     <ClInclude Include="TextFunction.h" />
     <ClInclude Include="MenuFunction.h" />
     <ClInclude Include="Timer.h" />

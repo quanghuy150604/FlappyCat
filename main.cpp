@@ -1,4 +1,4 @@
-#include "CommonFunction.h"
+#include "General.h"
 #include "ImgFunction.h"
 #include "GameMap.h"
 #include "PlayerFunction.h"

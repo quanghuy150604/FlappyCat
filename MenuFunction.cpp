@@ -1,7 +1,7 @@
 #include "MenuFunction.h"
 #include "ImgFunction.h"
 #include "TextFunction.h"
-#include "CommonFunction.h"
+#include "General.h"
 
 
 

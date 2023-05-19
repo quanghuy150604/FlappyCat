@@ -1,5 +1,5 @@
 #pragma once
-#include "CommonFunction.h"
+#include "General.h"
 
 class ImgFunction
 {

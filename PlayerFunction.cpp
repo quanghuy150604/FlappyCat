@@ -1,5 +1,5 @@
 #include "PlayerFunction.h"
-#include "CommonFunction.h"
+#include "General.h"
 
 Player::Player()
 {
@@ -100,11 +100,14 @@ void Player::PlayerMove(Map& map_data)
 void Player::CenterEntityOnMap(Map& map_data)
 {
 	map_data.start_x_ = x_pos - (SCREEN_WIDTH /5);
-	
+	if (map_data.start_x_ < 0)
+	{
 		map_data.start_x_ = 0;
-	
+	}
+	else if (map_data.start_x_ + SCREEN_WIDTH >= map_data.max_x_)
+	{
 		map_data.start_x_ = map_data.max_x_ - SCREEN_WIDTH;
-	
+	}
 }
 
 void Player::CheckMap(Map& map_data, int& action, int& ans, Mix_Chunk* point_sound)

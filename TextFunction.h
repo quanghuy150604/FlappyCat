@@ -1,6 +1,6 @@
 #pragma once
 #include "ImgFunction.h"
-#include "CommonFunction.h"
+#include "General.h"
 
 class Text : public ImgFunction
 {
