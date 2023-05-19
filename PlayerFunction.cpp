@@ -130,11 +130,11 @@ void Player::CheckMap(Map& map_data, int& action, int& ans, Mix_Chunk* point_sou
 
 	int height_min = height_frame < TILE_SIZE ? height_frame : TILE_SIZE;
 
-	x1 = (x_pos + x_plus) / TILE_SIZE;
-	x2 = (x_pos + x_plus + width_frame ) / TILE_SIZE;
+	x1 = (x_pos + x_plus + 10) / TILE_SIZE;
+	x2 = (x_pos + x_plus + width_frame) / TILE_SIZE;
 
-	y1 = (y_pos) / TILE_SIZE;
-	y2 = (y_pos + height_min) / TILE_SIZE;
+	y1 = (y_pos + 10) / TILE_SIZE;
+	y2 = (y_pos + height_min - 10) / TILE_SIZE;
 
 	if (x1 >= 0 && x2 < MAX_MAP_X && y1 >= 0 && y2 < MAX_MAP_Y)
 	{
