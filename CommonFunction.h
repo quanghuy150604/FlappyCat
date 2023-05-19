@@ -44,10 +44,10 @@ const int COLOR_KEY_B = 195;
 
 typedef struct Map
 {
-    int start_x_; // vi tri o tile map
+    int start_x_;
     int start_y_;
 
-    int max_x_; // chi so o tile map vd o: thu 3 max_y = 3 = start_x/64 
+    int max_x_;
     int max_y_;
     int tile[MAX_MAP_Y][MAX_MAP_X];
     const char* file_name_;
