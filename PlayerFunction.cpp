@@ -49,7 +49,6 @@ void Player::set_clips()
 
 void Player::ShowPlayer(SDL_Renderer* des)
 {
-		
 		LoadImg("img//meo4.png", des);
 		frame++;
 		if (frame >= 8)
@@ -62,10 +61,7 @@ void Player::ShowPlayer(SDL_Renderer* des)
 		SDL_Rect* currentClip = &frame_clip_[frame];
 		SDL_Rect renderQuad = { rect_.x, rect_.y, width_frame, height_frame };
 
-
 		SDL_RenderCopy(des, picture_, currentClip, &renderQuad);
-	
-
 }
 
 void Player::HandleInputAction(SDL_Event events, SDL_Renderer* screen, Mix_Chunk* sound)
