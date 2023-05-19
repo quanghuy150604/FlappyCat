@@ -38,7 +38,7 @@ const int COLOR_KEY_B = 195;
 #define TILE_SIZE 64
 #define BLANK_TILE 0
 
-#define MAX_MAP_X 400
+#define MAX_MAP_X 750
 #define MAX_MAP_Y 10
 
 
