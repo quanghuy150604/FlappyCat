@@ -19,7 +19,7 @@ static Mix_Chunk* g_sound_hit;
 static Mix_Chunk* g_sound_point;
 static Mix_Music* g_sound_meomeo;
 
-const int FRAMES_PER_SECOND = 24;
+const int FRAMES_PER_SECOND = 25;
 
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 640;
@@ -47,7 +47,7 @@ typedef struct Map
     int start_x_;
     int start_y_;
 
-    int max_x_;
+    int max_x_; 
     int max_y_;
     int tile[MAX_MAP_Y][MAX_MAP_X];
     const char* file_name_;
