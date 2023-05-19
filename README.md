@@ -1,4 +1,4 @@
-Flappy Cat !!!
+# Flappy Cat !!!
 
 Inspired by Flappy Bird.
 
