@@ -1,4 +1,5 @@
 # Flappy Cat !!!
+Created by Me Quang Huy in 2022.
 
 Inspired by Flappy Bird.
 
