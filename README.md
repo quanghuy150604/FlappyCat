@@ -5,7 +5,7 @@ Inspired by Flappy Bird.
 
 Download Zip and run "FlappyCat.exe" to play.
 
-Right click to jump.
+Right-click to jump.
 
 <img width="960" alt="2023-05-19" src="https://github.com/quanghuy150604/FlappyCat/assets/125646876/93200904-6dbe-49fc-964d-0acf49163d01">
 
