@@ -3,6 +3,8 @@ Created by Me Quang Huy in 2023.
 
 Inspired by Flappy Bird.
 
+Using C++ and SDL 2.0.
+
 Download Zip and run "FlappyCat.exe" to play.
 
 Right-click to jump.
